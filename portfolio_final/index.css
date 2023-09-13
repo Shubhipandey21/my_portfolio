@@ -3,18 +3,19 @@
 body {
     padding:0px;
     margin:0px;
-    background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('image/Desktop - 3.png') center center;
+    background: url('https://getwallpapers.com/wallpaper/full/a/8/1/66315.jpg');
     background-size:cover;
     width:100vw;
     height:100vh;
     overflow:hidden;
     font-family: 'Josefin Sans', sans-serif;
 }
+
 #loading {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    background:rgb(255, 50, 50);
+    background:rgb(255, 255, 255);
     z-index: 999;
     display: flex;
     justify-content: center;
@@ -26,7 +27,7 @@ body {
     width:50px;
     height:50px;
     border:12px solid #fff;
-    border-bottom:12px solid rgb(255, 50, 50);
+    border-bottom:12px solid rgb(0, 28, 72);
     border-radius:50%;
     margin:0;
 }
@@ -47,10 +48,10 @@ body {
     display:inline-block;
 }
 .box1 {
-    background:rgb(255, 8, 0);
+    background:rgb(0, 28, 72);
 }
 .box2 {
-    background:rgb(255, 50, 50);
+    background:rgb(0, 28, 72);
     margin-left:-5px;
 }
 #menu {
@@ -79,9 +80,10 @@ body {
     padding-bottom:10vh;
 }
 #middle h1 {
-    color:rgb(255, 50, 50);
+    color:rgba(255, 255, 255, 0.907);
     font-size:70px;
-    text-decoration:underline;
+
+    
 }
 #about {
     width:10vw;
@@ -89,50 +91,78 @@ body {
     text-align:center;
     font-size:25px;
     transform:rotate(-90deg);
-    background:transparent;
+    /* background:transparent; */
     color:#fff;
     position:fixed;
     left:0;
     bottom:40vh;
     display:flex;
     flex-direction: row;
+    align-items: center;
     justify-content:center;
     z-index:4;
     transition:0.4s ease-in-out;
     border-radius:0px 0px 100px 100px;
 }
-.logo {
-    margin: 10px;
-    max-width: 20px;
-    transition: transform 0.3s ease;
-  
+/* skills */
+
+
+.software {
+    
+    padding: 20px;
+    text-align: center;
 }
+
+#soft {
+    font-size: 1.5rem;
+    text-align:center ;
+  }
+
 .logo-container {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
-  }
-  
-  .logo {
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .logo img {
-    max-width: 100%;
-    height: auto;
-    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    align-content: center;
     flex-wrap: wrap;
-    justify-content: center;
+}
+
+.logo {
+    margin: 10px;
+    max-width: 50px;
+    /* transition: transform 0.3s ease; Add a transition for the transform property */
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+/* Add hover effect for scaling */
+.logo:hover {
+    transform: scale(1.2); /* Increase the size on hover */
+}
+@media screen and (max-width: 768px) {
+  .containerB {
+    align-items: center;  
+    flex-direction: column; /* Stack on top of each other for mobile screens */
   }
+
+  .info, .image {
+      flex: auto;
+      width: 100%;
+      margin: 0;
+      align-items: center;
+      
+  }
+}
 #work {
     width:10vw;
     height:10vw;
     text-align:center;
     font-size:25px;
     transform:rotate(90deg);
-    background:transparent;
+    /* background:transparent; */
     color:#fff;
     position:fixed;
     right:0;
@@ -149,7 +179,7 @@ body {
     height:10vw;
     text-align:center;
     font-size:25px;
-    background:transparent;
+    /* background:transparent; */
     color:#fff;
     position:fixed;
     bottom:0;
@@ -162,15 +192,15 @@ body {
     border-radius:100px 100px 0px 0px;
 }
 #about:hover {
-    background:rgba(255,50,50,0.9);
+    background:rgba(0, 28, 72,0.9);
     cursor:pointer;
 }
 #work:hover {
-    background:rgba(255,50,50,0.9);
+    background:rgba(0, 28, 72,0.9);
     cursor:pointer;
 }
 #contact:hover {
-    background:rgba(255,50,50,0.9);
+    background:rgba(0, 28, 72,0.9);
     cursor:pointer;
 }
 #middle table {
@@ -190,13 +220,16 @@ body {
 }
 .social:hover { 
     cursor: pointer;
-    color:rgb(255, 50, 50);
+    color:rgb(11, 105, 255);
 }
 .container {
     width:90vw;
     height:90vh;
     padding:5vh 5vw;
-    background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/image/Desktop\ -\ 1.png') center center;;
+    background-image: url(image/427161.jpg);
+    opacity: 0.99;
+    
+   
     color:#fff;
     z-index:9;
     position:fixed;
@@ -211,8 +244,12 @@ body {
     margin:20px 0px;
     transition:0.4s ease-in-out;
 }
+.container div p{
+    
+    font-weight: lighter;
+}
 .container div:hover {
-    cursor:pointer;
+    /* cursor:pointer; */
 }
 .container section {
     margin:8vh 0px;
@@ -233,7 +270,8 @@ body {
 }
 .container h1 {
     font-size:60px;
-    text-decoration:underline;
+    /* text-decoration:underline; */
+    color: rgb(9, 103, 255);
 }
 .container p {
     font-size:21px;
@@ -252,25 +290,10 @@ body {
 }
 .btn_one:hover {
     cursor:pointer;
-    color:rgb(255, 50, 50);
+    color:rgb(0, 28, 72);
     background:#fff;
 }
-.btn_two {
-    font-size:18px;
-    font-family: 'Josefin Sans', sans-serif;
-    color:rgb(255, 50, 50);
-    background:#fff;
-    border:3px solid #fff;
-    padding:8px 40px;
-    border-radius:80px;
-    font-weight:bold;
-    margin:2vh 10px;
-    transition:0.4s ease-in-out;
-}
-.btn_two:hover {
-    cursor:pointer;
-    padding:8px 60px;
-}
+
 .container form input {
     width:46%;
     margin:20px 1%;
@@ -318,16 +341,15 @@ body {
   
   .logo-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     margin: 0 20px;
     cursor: pointer;
     transition: transform 0.3s;
   }
   
-  .logo-container:hover {
-    transform: translateY(-10px);
-  }
+  
   
   .logo-container i {
     font-size: 36px;
@@ -345,7 +367,7 @@ body {
     font-weight:bold;
 }
 #footer a {
-    color:rgb(255, 50, 50) ;
+    color:rgb(0, 28, 72) ;
 }
 #particles-js {
     position:fixed;
@@ -360,14 +382,14 @@ body {
     background: #fff; 
 }
 ::-webkit-scrollbar-thumb {
-    background: rgb(255, 50, 50); 
+    background: rgb(0, 28, 72); 
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 50, 50,0.8); 
+    background: rgba(149, 50,255,0.8); 
 }
 ::selection {
 	color: #fff;
-	background: rgb(255, 50, 50);
+	background: rgb(0, 28, 72);
 }
 
 @media (max-width: 800px){ 
@@ -408,4 +430,131 @@ body {
     #box div {
         width:100%;
     }
+}
+
+.typewriter {
+    font-size: 36px;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #3498db; /* Typing cursor effect */
+}
+
+.word {
+    display: inline-block;
+    padding-right: 10px; /* Adjust spacing between words */
+}
+
+.word:last-child {
+    padding-right: 0;
+}
+/* Reset some default styles */
+
+
+.projects {
+    text-align: center;
+    padding: 20px;
+}
+
+
+.project-card {
+    background: rgb(0, 0, 0); /* Glass card background color */
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Card shadow */
+    padding: 20px;
+    
+    display: inline-block;
+    width: 250px; /* Adjust card width as needed */
+}
+
+
+
+.project-card img {
+    max-width: 100%; /* Ensure the image is responsive */
+    display: block;
+    border-radius: 10px; /* Rounded corners for the image */
+    margin-bottom: 10px; /* Spacing between image and title */
+    transition: transform 0.2s;
+
+}
+.project-card img:hover {
+    transform: scale(1.05); /* Enlarge the card on hover */
+}
+
+h3 {
+    font-size: 1.2rem; /* Adjust font size */
+    color: #ffffff; /* Adjust title color */
+}
+
+.preview-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0800ff; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+
+.preview-button:hover {
+    background: #258cd1; /* Button background color on hover */
+}
+.about{
+    display: flex;
+   float: right;
+}
+.about .info{
+    width: fit-content;
+}
+.about .photo img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .about {
+    
+    flex-direction: column; /* Stack content vertically on smaller screens */
+  }
+
+}
+/* achivements */
+
+html {
+  overflow-x: hidden;
+}
+
+.scroll-outer{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.scroll{
+  overflow-x: hidden;
+  display: flex;
+  width: 100%;
+}
+
+.scrolling-card {
+  display: inline;
+}
+
+.scrolling-card > img {
+  padding: 10px;
+  border-radius: 20px;
+  height: 300px;
+  transition: padding 0.5s;
+}
+
+.scrolling-card > img:hover{
+  padding-left: 28px;
+  padding-right: 28px;
+  transition: padding 0.5s;
+}
+
+.large-header canvas {
+	width: 100%;
+	height: 100%;
 }

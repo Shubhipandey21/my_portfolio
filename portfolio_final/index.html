@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Shubhi Pandey.</title>
+    <title>Shubhi Pandey</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+    <link href="image/profile.png" rel="icon">
+    <link href="image/profile.png" rel="apple-touch-icon">
     
 </head>
 <body>
+   
     <div id="loading">
         <div id="spinner"></div>
     </div>
-    <div id="particles-js"></div>
+    <!-- <div id="particles-js"></div> -->
     <div id="box">
         <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
         <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
@@ -25,100 +28,173 @@
         <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
         <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
     </div>
-    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
-    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">work</a>
-    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">About</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">Projects</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">Contact</a>
     <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
-        <h1>Shubhi Pandey.</h1>
-        <h2>Software Developer / AR/VR Develpoer/ Web Developer</h2>
-        <div id="menu">
-            <a onclick="showabout()">about</a>
-            <a onclick="showwork()">work</a>
-            <a onclick="showcontact()">contact</a>
+        <h1>Shubhi Pandey</h1>
+        <div>
+        <div class="typewriter">
+            <span class="word"></span>
+            
         </div>
-        <table>
-                <tr>
-                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook"></i></a></td>
-                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
-                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-instagram"></i></a></td>
-                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i class="fab fa-dribbble"></i></a></td>
-                </tr>
-        </table>
+        
+        </div>
+        <div id="menu">
+            <a onclick="showabout()">About</a>
+            <a onclick="showwork()">Projects</a>
+            <a onclick="showcontact()">Contact</a>
+        </div>
+    
+        
     </div>
+
     <div id="work_container" class="container">
+        
         <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
-        <h1>works.</h1>
-        <section>
-            <h2>work title</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <div id="used">
-                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
-                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
-                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+        <h1>Projects</h1>
+        <section class="projects">
+            
+            <div class="project-card" style="margin: 20px;">
+                <img src="image/project1.jpeg" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <a href="#" class="preview-button">Preview</a>
             </div>
-            <button class="btn_one">button 1</button>
-            <button class="btn_two">button 2</button>
+            <div class="project-card" style="margin: 20px;">
+                <img src="image/project1.jpeg" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <a href="#" class="preview-button">Preview</a>
+            </div>
+            <div class="project-card" style="margin: 20px;">
+                <img src="image/project1.jpeg" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <a href="#" class="preview-button">Preview</a>
+            </div>
+            <div class="project-card" style="margin: 20px;">
+                <img src="image/project1.jpeg" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <a href="#" class="preview-button">Preview</a>
+            </div>
+            <!-- Repeat the project-card div for each project -->
         </section>
+    
     </div>
-    <div id="about_container" class="container">
-            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
-            <h1>about.</h1>
+        <div id="about_container" class="container" >
+         <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+                <h1>About me</h1>
+                <table>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:0.2s;"><a class="social"><i class="fab fa-github"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:0.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:0.6s;"><a class="social"><i class="fab fa-instagram"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:0.8s;"><a class="social"><i class="fab fa-linkedin"></i></a></td>
+                    </tr>
+                </table>
             <section>
-                <h2>about me</h2>
                 
-                <div class="info" style="padding-right: 50%;">
+            <div class="about" >
+                <div class="info" style="margin-right:50px;">
                 <p>Hello there! I'm a passionate individual with a strong drive for innovation in both the world of Augmented Reality (AR) and Virtual Reality (VR) and the dynamic realm of frontend development. Currently, I'm pursuing my Bachelor's in Computer Science Engineering at KIET Group of Institutions.
                 </p>
                 <p>Being part of the dynamic world of technology and software development, I'm continuously honing my skills, staying updated with the latest trends and practices, and expanding my knowledge base. With a strong foundation in computer science and a creative edge, I aim to bring meaningful innovations to life, making a positive impact on how we interact with technology.
 
-                   <p>I'm not just studying engineering; I'm cultivating a mindset that seeks to make a difference. Join me on this journey as I harness the power of AR/VR and frontend development to shape the future, one line of code at a time.
-                </p>
+                   I'm not just studying engineering; I'm cultivating a mindset that seeks to make a difference. Join me on this journey as I harness the power of AR/VR and frontend development to shape the future, one line of code at a time.
+                
                    <p>Cheers to possibilities and innovation!</p>
-                   <h2>skills</h2>
-                   <div class="logo-container">
-                    <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/archive/7/79/20160727073232%21Unity_logo.svg" alt="UNITY 3D"></div>
-                    <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/36px-Figma-logo.svg.png" alt="CorelDRAW"></div>
-                    <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg" alt="CorelDRAW"></div>
-                    <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" alt="CorelDRAW"></div>
-                    <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="CorelDRAW"></div>
-                    <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="CorelDRAW"></div>
-                    <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="CorelDRAW"></div>
-                    <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/36px-CSS3_logo_and_wordmark.svg.png" alt="CorelDRAW"></div>
-                    <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="CorelDRAW"></div>
-                    <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Visual_Studio_Code_1.18_icon.svg" alt="CorelDRAW"></div>
-                    <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png" alt="CorelDRAW"></div>
-                    <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="CorelDRAW"></div>
-                    <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="CorelDRAW"></div>
-                    <!-- Add more software logos as needed  -->
-                </div>
+                   
                 </p>
+                </div>
+                <div class="photo">
+                    <img src="image/profile.png" alt="">
+                </div>
+            </div>
+            
+            
+
             </section>
-            <section>
-            </section>
+            
+                <section class="software">
+                    <h2 id="soft">Software I Use and Tech Stack</h2>
+                    <div class="logo-container">
+                        <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="Adobe Illustrator"></div>
+                        <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" alt="Adobe Photoshop"></div>
+                        <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/36px-Figma-logo.svg.png" alt="CorelDRAW"></div>
+                        <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg" alt="CorelDRAW"></div>
+                        <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" alt="CorelDRAW"></div>
+                        <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="CorelDRAW"></div>
+                        <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="CorelDRAW"></div>
+                        <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="CorelDRAW"></div>
+                        <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/36px-CSS3_logo_and_wordmark.svg.png" alt="CorelDRAW"></div>
+                        <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="CorelDRAW"></div>
+                        <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Visual_Studio_Code_1.18_icon.svg" alt="CorelDRAW"></div>
+                        <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png" alt="CorelDRAW"></div>
+                        <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/64px-Octicons-mark-github.svg.png" alt="CorelDRAW"></div>
+                        <div class="logo"><img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.svg" alt="CorelDRAW"></div>
+                        <!-- Add more software logos as needed  -->
+                    </div>
+                 </section>
+                 <section>
+                    <div class="experience">
+                        <h2 id="soft">Experience</h2>
+                        <div class="projects">
+                            <div class="project-card" style="margin: 20px;">
+                                <a href="https://innogeeks.in/" target="_blank"><img src="experience logo/inno.png" alt="Project 1"></a>
+                                <h3>AR/VR Mentor</h3>
+                                
+                            </div>
+                            <div class="project-card" style="margin: 20px;">
+                                <a href="https://skill-eliters.netlify.app/" target="_blank"><img src="experience logo/skill eliters.png" alt="Project 1"></a>
+                                <h3>AR/VR Developer</h3>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                 <section>
+                    <div class="achive">
+                        <h2 id="soft">Achivements</h2>
+                        <div class="scroll-outer" >
+                            <div class="scroll" id="flavoursContainer">
+                            <div class="scrolling-card"><img src="achivements/YOUR STORY ENDEVOUR_page-0001.jpg" alt=""></div>
+                        
+                            <div class="scrolling-card"><img src="achivements/HACKED 22(BML MUNJAL).jpeg" alt=""></div>
+                            <div class="scrolling-card"><img src="achivements/INNOTECH_POSTER MAKING.jpg" alt=""></div>
+                            <div class="scrolling-card"><img src="achivements/MIVI.png" alt=""></div>
+                            <div class="scrolling-card"><img src="achivements/summer intership_page-0001.jpg" alt=""></div>
+                            <div class="scrolling-card"><img src="achivements/6.png" alt=""></div>
+                            <div class="scrolling-card"><img src="achivements/TRESURE HUNT ENDEVOUR_page-0001.jpg" alt=""></div>
+                            <div class="scrolling-card"><img src="achivements/5363eddc-6019-4836-9ec5-70b39ab393cb.png" alt=""></div>
+                        
+                          </div>
+                          
+                    </div>
+                 </section>
+        
         </div>
-        </div>
-          <div id="contact_container" class="container">
+        <div id="contact_container" class="container">
             <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
-            <h1>contact.</h1>
+            <h1>Contact</h1>
+            <p>Let's collaborate and create something amazing together! Feel free to reach out and get in touch. I'm excited to hear about your project and how I can contribute to its success.</p>
             <section>
-                <h2>contact me</h2>
+                
                 <p>
                     <form>
-                        <input type="text" placeholder="name" required>
-                        <input type="email" placeholder="email" required><br>
-                        <textarea placeholder="your message" required rows="5"></textarea><br>
-                        <button class="btn_one">send</button>
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required><br>
+                        <textarea placeholder="Your Message" required rows="5"></textarea><br>
+                        <button class="btn_one">Send</button>
                     </form> 
                 </p>
             </section>
         </div>
         <div id="footer">
-            made on earth by a human <br> <a href="https://imfunniee.github.io">imfunniee</a>
+            <div id="large-header" class="large-header">
+                <canvas id="demo-canvas"></canvas>
+                
+            </div> 
         </div>
     <script src="index.js" type="text/javascript"></script>
-    <script src="particles.js"></script>
     <script src="app.js"></script>
+    <script src="particles.js"></script>
 </body>
 </html>
